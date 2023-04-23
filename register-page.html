@@ -110,8 +110,18 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  
+      
+    
 }
-
+@media(max-width: 900px){
+  .benefits-content-list-element {
+    flex-basis: 33.3%;
+  }
+  .benefits-content-list-icon :hover {
+    height: 65px;
+  }
+ }
 .benefits-content-list-element {
     width: calc(100% / 6);
     display: flex;
@@ -119,6 +129,8 @@
     box-sizing: border-box;
     padding: 20px 20px 30px 20px;
     min-width: min-content;
+    
+   
 }
 
 .benefits-content-list-icon {
@@ -954,7 +966,7 @@ span.lia-button-link-arrow.lia-button-link-arrow-black {
            </div>
          </div>
       </div>
-      
+
       </div>
 
      
