@@ -7,9 +7,10 @@
 <#assign sorting = http.request.parameters.name.get("sort", "") />
  
 <#-- page size -->
-#assign pageSize = "30"?number />  <#-- I just remove all of it and set 30  -->
+<#assign pageSize = "30"?number />  <#-- I just remove all of it and set 30  -->
 <#if user.registered>
-   <#assign pageSizeUser = settings.name.get("layout.messages_per_page_linear") />
+   <#assign pageSizeUser = 30/>
+   <#-- I don't know if i should  changed it, but in task it said " always", so i also changed it -->
    <#if pageSizeUser?number != pageSize?number>
        <#assign pageSize = pageSizeUser />
    </#if>
